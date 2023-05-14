@@ -116,3 +116,49 @@ ul{list-style:none;}
         font-size:3rem;
     }
 }
+
+
+/* Offers */
+.service-block{
+  margin: 2rem auto;
+}
+.box-wrapper{
+  max-width:95%;
+  display:flex;
+    justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+}
+.box-wrapper .box{
+  box-shadow:1px 1px 10px rgba(0,0,0,0.5);
+  width:300px;
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  margin: 1rem;
+  border-radius:10px;
+  overflow:hidden;
+}
+.box-wrapper .box img{
+  width:100%;
+  height:90%;
+  z-index: 9;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.box-wrapper .overview{
+  background: #000;
+  color: var(--bg-primary);
+  transition:  .5s ease;;
+  transform: translateY(101%);
+  width:100%;
+  text-align:center;
+}
+.box-wrapper .box:hover{
+  background:rgba(0,0,0,0.9);
+  z-index: 10;
+}
+.box-wrapper:hover .overview{
+  transform:translateY(0);
+}
